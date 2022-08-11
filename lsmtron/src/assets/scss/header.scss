@@ -1,5 +1,41 @@
-.header {height:60px;background-color:#3A3E52;margin-left:222px;}
-.header h1 {font-size:13px;font-weight:700;}
+.header {
+	height:60px;
+	background-color:#3A3E52;
+	margin-left:222px;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:0 50px;
+	h1 {
+		font-size:13px;
+		font-weight:700;
+		color:#fff;
+	}
+	.profile {
+		display:flex;
+		align-items:center;
+		&-name {
+			button {
+				font-size:13px;
+				color:#fff;
+				border:1px solid #fff;
+				border-radius:50px;
+				padding:0 14px;
+				line-height:28px;
+			}
+		}
+		ul {
+			padding:0;
+			margin-left:24px;
+			display:flex;
+			align-items:center;
+			li,
+			button {
+				display:flex;
+			}
+		}
+	}
+}
 
 @media screen and (max-width:1239px) {
 	

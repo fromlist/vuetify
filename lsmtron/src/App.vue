@@ -2,7 +2,6 @@
   <!-- App.vue -->
   <v-app>
     
-    
     <HeaderLayout/>
     <NavigationLayout/>
     <!-- Sizes your content based upon application components -->
@@ -11,13 +10,16 @@
       <!-- Provides the application the proper gutter -->
       <v-container fluid>
 
-        <!-- If using vue-router -->
-        <router-view></router-view>
       </v-container>
     </v-main>
 
   </v-app>
 </template>
+
+
+<style lang="scss">
+  @import './assets/scss/common.scss';
+</style>
 
 <script>
 import HeaderLayout from './components/HeaderLayout';
